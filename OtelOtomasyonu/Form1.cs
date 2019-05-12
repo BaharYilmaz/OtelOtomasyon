@@ -331,5 +331,51 @@ namespace OtelOtomasyonu
         {
 
         }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox10_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmbBoxIL_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            cmbBoxListeILCE.Enabled = true;
+            cmbBoxListeILCE.Items.Clear();
+            if (cmbBoxListeIL.Text=="İzmir")
+            {
+                cmbBoxListeILCE.Items.Add("Alaçatı");
+                cmbBoxListeILCE.Items.Add("Çeşme");
+            }
+            if(cmbBoxListeIL.Text == "Antalya")
+            {
+                cmbBoxListeILCE.Items.Add("Demre");
+                cmbBoxListeILCE.Items.Add("Manavgat");
+            }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            cmbBoxListeIL.Enabled = false;
+            cmbBoxListeILCE.Enabled = false;
+
+        }
+
+        private void cmbBox_otelListele_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbBox_otelListele.Text== "İl-İlçe")
+            {
+                cmbBoxListeIL.Enabled = true;
+            }
+        }
     }
 }

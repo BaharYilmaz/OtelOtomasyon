@@ -8,5 +8,6 @@ namespace OtelOtomasyonu
 {
    public class Heap
     {
+        //TO DO: Heap kısmı eklenecek
     }
 }
