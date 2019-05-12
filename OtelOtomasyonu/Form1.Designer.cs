@@ -399,10 +399,14 @@
             // 
             this.cmbBox_gIL.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbBox_gIL.FormattingEnabled = true;
+            this.cmbBox_gIL.Items.AddRange(new object[] {
+            "İzmir",
+            "Antalya"});
             this.cmbBox_gIL.Location = new System.Drawing.Point(217, 86);
             this.cmbBox_gIL.Name = "cmbBox_gIL";
             this.cmbBox_gIL.Size = new System.Drawing.Size(186, 24);
             this.cmbBox_gIL.TabIndex = 2;
+            this.cmbBox_gIL.SelectedIndexChanged += new System.EventHandler(this.cmbBox_gIL_SelectedIndexChanged);
             // 
             // txt_gOtelYildiz
             // 
@@ -546,7 +550,7 @@
             // 
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label20.Location = new System.Drawing.Point(51, 90);
+            this.label20.Location = new System.Drawing.Point(48, 90);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(101, 20);
             this.label20.TabIndex = 1;
@@ -626,10 +630,14 @@
             // 
             this.cmbBox_il.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbBox_il.FormattingEnabled = true;
+            this.cmbBox_il.Items.AddRange(new object[] {
+            "İzmir",
+            "Antalya"});
             this.cmbBox_il.Location = new System.Drawing.Point(217, 86);
             this.cmbBox_il.Name = "cmbBox_il";
             this.cmbBox_il.Size = new System.Drawing.Size(186, 24);
             this.cmbBox_il.TabIndex = 2;
+            this.cmbBox_il.SelectedIndexChanged += new System.EventHandler(this.cmbBox_il_SelectedIndexChanged);
             // 
             // txt_OtelYildiz
             // 

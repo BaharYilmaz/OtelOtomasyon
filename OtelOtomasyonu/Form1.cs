@@ -367,6 +367,11 @@ namespace OtelOtomasyonu
         {
             cmbBoxListeIL.Enabled = false;
             cmbBoxListeILCE.Enabled = false;
+            cmbBox_ilce.Enabled = false;
+            cmbBox_gOtelILce.Enabled = true;
+
+
+
 
         }
 
@@ -375,6 +380,38 @@ namespace OtelOtomasyonu
             if (cmbBox_otelListele.Text== "İl-İlçe")
             {
                 cmbBoxListeIL.Enabled = true;
+            }
+        }
+
+        private void cmbBox_il_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            cmbBox_ilce.Enabled = true;
+            cmbBox_ilce.Items.Clear();
+            if (cmbBox_il.Text == "İzmir")
+            {
+                cmbBox_ilce.Items.Add("Alaçatı");
+                cmbBox_ilce.Items.Add("Çeşme");
+            }
+            if (cmbBox_il.Text == "Antalya")
+            {
+                cmbBox_ilce.Items.Add("Demre");
+                cmbBox_ilce.Items.Add("Manavgat");
+            }
+        }
+
+        private void cmbBox_gIL_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            cmbBox_gOtelILce.Enabled = true;
+            cmbBox_gOtelILce.Items.Clear();
+            if (cmbBox_gIL.Text == "İzmir")
+            {
+                cmbBox_gOtelILce.Items.Add("Alaçatı");
+                cmbBox_gOtelILce.Items.Add("Çeşme");
+            }
+            if (cmbBox_gIL.Text == "Antalya")
+            {
+                cmbBox_gOtelILce.Items.Add("Demre");
+                cmbBox_gOtelILce.Items.Add("Manavgat");
             }
         }
     }
