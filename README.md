@@ -17,10 +17,12 @@ Zişan KARSATAR  (https://github.com/zisankarsatar)
 
 ## Youtube Linki https://www.youtube.com/watch?v=EgisgFTPVhA
 
+
 ## Otel Otomasyon Sistemi
 
 Bu uygulama, değişik filtrelere göre otellerin ve otel personellerinin listelenmesini sağlamaktadır. Ayrıca bu otellere ve personellere puan verilip, yorum yapılmasına da imkan vermektedir.
 Uygulama C# dili ve OOP mantığı ile Bağlı Liste, İkili Arama Ağacı, Hash ve Heap gibi veri yapıları kullanılarak Visual Studio ile geliştirilmiştir. Tüm veriler Xml ile tutulmuştur.
+
 
 ## Kullanılan Teknolojiler
 
